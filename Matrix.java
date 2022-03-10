@@ -8,18 +8,18 @@ public class Matrix {
 
     // Hack: create toString method using nested for loops to format output of a matrix
     public String toString(){//overriding the toString() method
-        String reverse_str = "";
-        String str = "";
+        StringBuilder reverse_str = new StringBuilder();
+        StringBuilder str = new StringBuilder();
         for (int[] ints : matrix) {
-            for (int col = 0; col < ints.length; col++) {
-                reverse_str = ints[col] + reverse_str;
-                str = str + ints[col];
+            for (int anInt : ints) {
+                reverse_str.insert(0, anInt);
+                str.append(anInt);
             }
-            str = str + "\n";
-            reverse_str = "\n" + reverse_str;
+            str.append("\n");
+            reverse_str.insert(0, "\n");
         }
-        str = str+reverse_str+"\n";
-        return str;
+        str.append(reverse_str).append("\n");
+        return str.toString();
     }
 
     // declare and initialize a matrix for a keypad
