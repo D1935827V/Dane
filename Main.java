@@ -11,6 +11,8 @@ Java has many standard libraries. The names around the dots in import often give
 import java.util.Scanner; //java library for user input
 import java.util.ArrayList; //java library for data structures
 import java.util.HashMap; //import hashmap class
+import java.util.InputMismatchException; //import mismatch exception
+
 
 /** Main - entry point class for this project
  1.'C' and Java have a main function/method that is the ENTRY into code execution. Both languages need a file to contain that ENTRY method/function.  Common convention for 'C': main.c.  Convention for Java: Main.java.
@@ -62,10 +64,20 @@ public class Main {   //Everything in Java is inside a class, Squigs, Squigalies
         }
 
         //Using Scanner Class to get integer as input
-        selection = scan.nextInt();  //Using nextInt() method to get an integer value
+        try {
+            selection = scan.nextInt();  //Using nextInt() method to get an integer value
+            //Access HashMap values
+            try {
+                menu_actions.get(selection).run();
+            }
+            catch(Exception e) {
+                System.out.println("pick a valid option");
+            }
+        }
+        catch(Exception e) {
+            System.out.println("pick a valid option");
+        }
 
-        //Access HashMap values
-        menu_actions.get(selection).run();
 
         //Recursion: AP CSA requirement 10
         //Calling the menu() method inside of the menu() code block is called recursion.
