@@ -73,10 +73,12 @@ public class Main {   //Everything in Java is inside a class, Squids, Squiggles,
             }
             catch(Exception e) {
                 System.out.println("pick a valid option");
+                menu(menu_items, menu_actions);
             }
         }
         catch(Exception e) {
             System.out.println("pick a valid option");
+            menu(menu_items, menu_actions);
         }
 
 
