@@ -11,7 +11,6 @@ Java has many standard libraries. The names around the dots in import often give
 import java.util.Scanner; //java library for user input
 import java.util.ArrayList; //java library for data structures
 import java.util.HashMap; //import hashmap class
-import java.util.InputMismatchException; //import mismatch exception
 
 
 /** Main - entry point class for this project
@@ -27,16 +26,16 @@ public class Main {   //Everything in Java is inside a class, Squids, Squiggles,
     static public void main(String[] args)  {  // open squid begins the method
 
         // Create arraylist called menu_items
-        ArrayList<String> menu_items = new ArrayList<String>();
+        ArrayList<String> menu_items = new ArrayList<>();
 
         // Add values
         menu_items.add("Say Hi: 1");
         menu_items.add("IntByReference: 2");
         menu_items.add("Matrix: 3");
-        menu_items.add("End: 4");
+        menu_items.add("End: 0");
 
         // Create a HashMap object called menu_actions
-        HashMap<Integer, Runnable> menu_actions = new HashMap<Integer, Runnable>();
+        HashMap<Integer, Runnable> menu_actions = new HashMap<>();
 
         // Add keys and values (Option, City)
         menu_actions.put(1, () -> System.out.println("Hello World"));
