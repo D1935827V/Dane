@@ -63,7 +63,7 @@ class Linked_reverse
     }
 
     // Driver Code
-    public static void main(String[] args)
+    public static void main()
     {
         /* Start with the empty list */
         //Node head = null;
@@ -82,5 +82,7 @@ class Linked_reverse
 
         System.out.println();
         printList(head);
+        System.out.println();
+
     }
 }

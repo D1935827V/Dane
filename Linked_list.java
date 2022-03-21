@@ -135,7 +135,7 @@ class Node<T> {
 
 // Driver class
 class Linked_list {
-    public static void main(String[] args) {
+    public static void main() {
         // Create Linked List
         List<String> myList = new List<>();
 

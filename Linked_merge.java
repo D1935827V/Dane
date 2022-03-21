@@ -46,7 +46,7 @@ class MergeLists
 
 
     // Driver Code
-    public static void main(String args[])
+    public static void main()
     {
     /* Let us create two sorted linked
        lists to test the methods 
@@ -73,14 +73,14 @@ class MergeLists
         llist2.printList();
 
 
-        llist1.head = new Gfg().sortedMerge(llist1.head,
+        llist1.head = new Linked_merge().sortedMerge(llist1.head,
                 llist2.head);
         llist1.printList();
 
     }
 }
 
-class Gfg
+class Linked_merge
 {
     /* Takes two lists sorted in
     increasing order, and splices
