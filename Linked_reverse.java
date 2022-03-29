@@ -24,6 +24,7 @@ class Linked_reverse
         (head) = new_node;
     }
 
+
     // Function to reverse linked list
     static Node2 reverseList(Node2 head)
     {

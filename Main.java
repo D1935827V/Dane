@@ -45,7 +45,7 @@ public class Main {   //Everything in Java is inside a class, Squids, Squiggles,
         menu_actions.put(2, IntByReference::main);
         menu_actions.put(3, Matrix::main);
         menu_actions.put(4, Linked_list::main);
-        menu_actions.put(4, MergeLists::main);
+        menu_actions.put(5, MergeLists::main);
         menu_actions.put(6, Linked_reverse::main);
         menu_actions.put(0, () -> System.out.println("Goodbye"));
 

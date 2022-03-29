@@ -135,6 +135,3 @@ class Linked_merge
         return dummyNode.next;
     }
 }
-
-// This code is contributed
-// by Shubhaw Kumar
