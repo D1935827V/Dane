@@ -177,8 +177,9 @@ class GFG {
     {
 
         solution str = new solution();
-        System.out.println("100 + 200");
-        String s =  str.convertToReversePolish("100 + 200");
+        String input = "(100 + 200)*3";
+        System.out.println(input);
+        String s =  str.convertToReversePolish(input);
         System.out.println(s);
         String[] x = s.split(" ");
         System.out.println(Arrays.toString(x));
