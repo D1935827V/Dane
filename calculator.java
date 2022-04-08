@@ -1,7 +1,6 @@
 // Java Program to find the
 // solution of the arithmetic
 // using the stack
-import java.io.*;
 import java.util.*;
 
 class solution {
@@ -174,10 +173,11 @@ class solution {
 
 class GFG {
 
-    public static void main(String[] args)
+    public static void main(String args[])
     {
 
         solution str = new solution();
+        System.out.println("100 + 200");
         String s =  str.convertToReversePolish("100 + 200");
         System.out.println(s);
         String[] x = s.split(" ");
