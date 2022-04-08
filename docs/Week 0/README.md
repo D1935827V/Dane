@@ -1,3 +1,5 @@
+[Home](https://d1935827v.github.io/Dane)
+
 ## Week 0
 
 1. [Create Hashmap menu with try and catch function](https://github.com/D1935827V/Dane/blob/gh-pages/Main.java)
