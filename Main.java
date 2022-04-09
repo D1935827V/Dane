@@ -36,6 +36,7 @@ public class Main {   //Everything in Java is inside a class, Squids, Squiggles,
         menu_items.add("Linked Merge: 5");
         menu_items.add("Linked Reverse: 6");
         menu_items.add("Calculator: 7");
+        menu_items.add("Sorts: 8");
         menu_items.add("End: 0");
 
         // Create a HashMap object called menu_actions
@@ -49,6 +50,7 @@ public class Main {   //Everything in Java is inside a class, Squids, Squiggles,
         menu_actions.put(5, MergeLists::main);
         menu_actions.put(6, Linked_reverse::main);
         menu_actions.put(7, GFG::main);
+        menu_actions.put(8, C3::main);
         menu_actions.put(0, () -> System.out.println("Goodbye"));
 
         menu(menu_items, menu_actions); // 'coder' defined method/function call to a different code block

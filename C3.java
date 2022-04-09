@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 
 public class C3 {
-    public static void main(String args[]) {
+
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(
                 ("1: Bubble Sort\n2: Selection Sort\n3: Insertion Sort\n4: Merge Sort"));
