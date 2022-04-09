@@ -8,36 +8,33 @@ class solution {
     {
 
         // Initialize the stack and the variable
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
         int x, y;
-        String result = "";
-        int get = 0;
+        String result;
         String choice;
-        int value = 0;
+        int value;
         String p = "";
 
-        // Iterating to the each character
+        // Iterating to each character
         // in the array of the string
-        for (int i = 0; i < tokens.length; i++) {
+        for (String thistoken : tokens) {
 
             // If the character is not the special character
             // ('+', '-' ,'*' , '/')
             // then push the character to the stack
-            String thistoken = tokens[i];
             if (!thistoken.equals("+") && !thistoken.equals("-") && !thistoken.equals("*") && !thistoken.equals("/")) {
-                stack.push(tokens[i]);
+                stack.push(thistoken);
                 continue;
-            }
-            else {
+            } else {
                 // else if the character is the special
                 // character then use the switch method to
                 // perform the action
-                choice = tokens[i];
+                choice = thistoken;
             }
 
             // Switch-Case
             switch (choice) {
-                case "+":
+                case "+" -> {
 
                     // Performing the "+" operation by popping
                     // put the first two character
@@ -48,11 +45,10 @@ class solution {
                     value = x + y;
                     result = p + value;
                     stack.push(result);
-                    break;
+                }
+                case "-" -> {
 
-                case "-":
-
-                    // Performing the "-" operation by poping
+                    // Performing the "-" operation by popping
                     // put the first two character
                     // and then again store back to the stack
                     x = Integer.parseInt(stack.pop());
@@ -60,12 +56,11 @@ class solution {
                     value = y - x;
                     result = p + value;
                     stack.push(result);
-                    break;
-
-                case "*":
+                }
+                case "*" -> {
 
                     // Performing the "*" operation
-                    // by poping put the first two character
+                    // by popping put the first two character
                     // and then again store back to the stack
 
                     x = Integer.parseInt(stack.pop());
@@ -73,11 +68,10 @@ class solution {
                     value = x * y;
                     result = p + value;
                     stack.push(result);
-                    break;
+                }
+                case "/" -> {
 
-                case "/":
-
-                    // Performing the "/" operation by poping
+                    // Performing the "/" operation by popping
                     // put the first two character
                     // and then again store back to the stack
 
@@ -86,10 +80,9 @@ class solution {
                     value = y / x;
                     result = p + value;
                     stack.push(result);
-                    break;
-
-                default:
-                    continue;
+                }
+                default -> {
+                }
             }
         }
 
@@ -102,8 +95,8 @@ class solution {
             return null;
         String res = "";
         int len = exp.length();
-        Stack<Character> operator = new Stack<Character>();
-        Stack<String> reversePolish = new Stack<String>();
+        Stack<Character> operator = new Stack<>();
+        Stack<String> reversePolish = new Stack<>();
         //avoid checking empty
         operator.push('#');
         for (int i = 0; i < len;) {
@@ -114,10 +107,10 @@ class solution {
                 break;
             //if is number
             if (isNum(exp.charAt(i))) {
-                String num = "";
+                StringBuilder num = new StringBuilder();
                 while (i < len && isNum(exp.charAt(i)))
-                    num += exp.charAt(i++);
-                reversePolish.push(num);
+                    num.append(exp.charAt(i++));
+                reversePolish.push(num.toString());
                 //is operator
             } else if (isOperator(exp.charAt(i))) {
                 char op = exp.charAt(i);
@@ -183,5 +176,7 @@ class GFG {
         System.out.println(Arrays.toString(x));
         int result = str.stacky(x);
         System.out.println(result);
+        Scanner scan = new Scanner(System.in);  //defining an object to scan/get input from user, notice the use of "new", this means you are making an object of type Scanner.
+
     }
 }

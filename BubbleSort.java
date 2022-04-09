@@ -1,7 +1,6 @@
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class BubbleSort {
     private final ArrayList<Integer> data = new ArrayList<>();

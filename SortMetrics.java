@@ -13,7 +13,7 @@ public class SortMetrics{
 
     double sortAverage = 0;
         for (int x : sorts)
-    sortAverage += (double) x;
+    sortAverage += x;
 
         comparisons.sort(Comparator.naturalOrder());
         comparisons.remove(0);
@@ -21,7 +21,7 @@ public class SortMetrics{
 
     double comparisonAverage = 0.0;
         for (int x : comparisons)
-    comparisonAverage += (double) x;
+    comparisonAverage += x;
 
         timeElapsed.sort(Comparator.naturalOrder());
         timeElapsed.remove(0);

@@ -11,22 +11,22 @@ public class C3 {
 
         // Simple switch statement to call the function for the specified algorithm
         switch (algo) {
-            case 1:
+            case 1 -> {
                 BubbleSort bubbleSort = new BubbleSort();
                 bubbleSort.run();
-                break;
-            case 2:
+            }
+            case 2 -> {
                 SelectionSort selectionSort = new SelectionSort();
                 selectionSort.run();
-                break;
-            case 3:
+            }
+            case 3 -> {
                 InsertionSort insertionSort = new InsertionSort();
                 insertionSort.run();
-                break;
-            case 4:
+            }
+            case 4 -> {
                 MergeSort mergeSort = new MergeSort();
                 mergeSort.run();
-                break;
+            }
         }
     }
 }

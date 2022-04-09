@@ -29,7 +29,7 @@ class Linked_reverse
     static Node2 reverseList(Node2 head)
     {
         // Stack to store elements of list
-        Stack<Node2 > stk = new Stack<Node2> ();
+        Stack<Node2 > stk = new Stack<>();
 
         // Push the elements of list to stack
         Node2 ptr = head;
