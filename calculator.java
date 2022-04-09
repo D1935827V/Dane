@@ -173,11 +173,9 @@ class solution {
 
 class GFG {
 
-    public static void main(String args[])
-    {
-
+    public static void main() {
         solution str = new solution();
-        String input = "(100 + 200)*3";
+        String input = "(100 + 200)*3-10";
         System.out.println(input);
         String s =  str.convertToReversePolish(input);
         System.out.println(s);
