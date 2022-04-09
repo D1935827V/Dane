@@ -167,16 +167,22 @@ class solution {
 class GFG {
 
     public static void main() {
-        solution str = new solution();
-        String input = "(100 + 200)*3-10";
-        System.out.println(input);
-        String s =  str.convertToReversePolish(input);
-        System.out.println(s);
-        String[] x = s.split(" ");
-        System.out.println(Arrays.toString(x));
-        int result = str.stacky(x);
-        System.out.println(result);
+        System.out.println("Example:");
+        calculate("(100+200)*3-10");
+        System.out.println("Enter Equation:");
         Scanner scan = new Scanner(System.in);  //defining an object to scan/get input from user, notice the use of "new", this means you are making an object of type Scanner.
+        String input = scan.next();  //Using nextInt() method to get a value
+        calculate(input);
+    }
 
+    public static void calculate(String input){
+        solution str = new solution();
+        System.out.println(input);
+        String reversePolish =  str.convertToReversePolish(input);
+        System.out.println(reversePolish);
+        String[] reversePolish_to_array = reversePolish.split(" ");
+        System.out.println(Arrays.toString(reversePolish_to_array));
+        int answer = str.stacky(reversePolish_to_array);
+        System.out.println(answer);
     }
 }
