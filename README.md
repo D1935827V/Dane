@@ -1,5 +1,8 @@
 # indii3
-- [replit. link](https://replit.com/@DaneVestal/Dane#.replit)
+- [replit. link](https://replit.com/@DaneVestal/FreeExperiencedInstance#.replit)
+- [Review Ticket](https://github.com/D1935827V/Dane/issues/3)
+- [Video](https://www.youtube.com/watch?v=rNhjWylPRek&ab_channel=DaneVestal)
+
 <details>
 <summary>Data Structures</summary>
 <br>
